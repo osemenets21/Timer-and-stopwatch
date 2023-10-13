@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Clock</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="block date">
+        <div class="today"></div>
+        <div class="time"></div>
+      </div>
+      <div class="block stopwatch">
+        <div class="wrapper_stopwatch">
+          <div class="wparrper_time">
+            <div class="stopwatch_block">
+              <div class="stopwatch_time hour">00</div>
+            </div>
+            <span class="colon">:</span>
+            <div class="stopwatch_block">
+              <div class="stopwatch_time minutes">00</div>
+            </div>
+            <span class="colon">:</span>
+            <div class="stopwatch_block">
+              <div class="stopwatch_time seconds">00</div>
+            </div>
+            <span class="colon">:</span>
+            <div class="stopwatch_block">
+              <div class="stopwatch_time milliseconds">00</div>
+            </div>
+          </div>
+          <div class="stopwatch_buttons">
+            <form>
+              <input type="button" class="button start" value="START" />
+              <input type="button" class="button loop" value="LOOP" />
+              <input type="button" class="button stop" value="STOP" />
+              <input type="button" class="button reset" value="RESET" />
+            </form>
+          </div>
+        </div>
+        <div class="stopwatch_area"></div>
+      </div>
+      <div class="block timer">
+        <div class="timer_change">
+          <div class="timer_minutes">00</div>
+          <div class="timer_buttons">
+            <input type="button" class="plus buttons" value="+">
+            <input type="button" class="minus buttons" value="-">
+          </div>
+        </div>
+        <div class="dial">
+          <div class="dial_clock">
+            <div class="dial_secundes">00:00</div>
+          </div>
+          <div class="dial_buttons">
+            <input type="button" class="button start_timer" value="START">
+            <input type="button" class="button stop_timer" value="STOP">
+            <input type="button" class="button reset_timer" value="RESET">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

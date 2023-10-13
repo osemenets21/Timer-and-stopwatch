@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Digital';
+    src: url(fonts/digital-7.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Digital';
+    color: rgb(61, 147, 227);
+}
+
+.colon {
+    font-size: 30px;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block {
+    width: 100%;
+    height: 170px;
+    border: 1px solid rgb(127, 125, 205);
+    background-color: rgb(26, 26, 133, 0.2);
+}
+
+.today {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.time {
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.stopwatch {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stopwatch_time {
+    width: 300px;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+}
+
+.stopwatch_buttons {
+    width: 300px;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper_stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 79px;
+    margin-top: 40px;
+}
+
+.wparrper_time {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 70%;
+    height: 60px;
+
+}
+
+.stopwatch_time {
+    width: 50px;
+
+}
+
+.button {
+    width: 55px;
+    border: 1px solid rgb(127, 125, 205);
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(61, 147, 227);
+    font-family: 'Digital';
+    font-size: 20px;
+}
+
+.button:hover, .buttons:hover {
+    background-color: skyblue;
+    color: black;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.stopwatch_area {
+    width: 300px;
+    max-height: 80%;
+    min-height: 80%;
+    border-radius: 10px;
+    border: 1px solid rgb(127, 125, 205);
+    margin: auto 0;
+    overflow: auto;
+    color: rgb(61, 147, 227);
+    padding: 10px;
+}
+
+.stopwatch_area::-webkit-scrollbar {
+    width: 10px;
+}
+
+.stopwatch_area::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.stopwatch_area::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 147, 227);
+    border-radius: 10px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.timer_minutes {
+    font-size: 75px;
+}
+
+.timer_change {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.timer_buttons {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dial_buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid rgb(127, 125, 205);
+    color: rgb(61, 147, 227);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.dial_clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dial_secundes {
+    font-size: 90px;
+}
+
+.timer_change, .dial {
+    width: 185px;
+}
+
+.dial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
